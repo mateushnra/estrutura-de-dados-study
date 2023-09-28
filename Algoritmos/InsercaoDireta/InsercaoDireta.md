@@ -1,0 +1,4 @@
+Incicialmente considera-se o segmento ordenado como sendo o primeiro elemento do vetor. Os demais fazem parte do segmento não ordenado. Considera-se como eleito o primeiro elemento do segmento não ordenado. Então é feita uma busca sequencial pela posição relativa correta do eleito no segmento ordenado. Nas comparações do eleito com as posições duas execuções são posíveis:
+
+- Se o elemento a ser inserido é menor do que o que se está comparando, o elemento comparado é movido uma posição para a direita, deixando vaga sua posição;
+- Se o elemento a ser inserido é maior do que o que se está comparando, fazemos a inserção do elemento na posição vaga correspondente a posição correta no setor ordenado. 
