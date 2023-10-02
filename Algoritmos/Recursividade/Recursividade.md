@@ -1,0 +1,1 @@
+Uma função recursiva é uma função que chama a si mesmo antes do término da sua execução.

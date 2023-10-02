@@ -37,10 +37,10 @@ bool retirar(int &valor){
 		return false;
 	else{
 		valor = fila[0];
-		fim--;
-		for(int i = 0; i <= fim; i++){
+		for(int i = 0; i < fim; i++){
 			fila[i] = fila [i + 1];
 		}
+		fim--;
 		return true;
 	}
 }

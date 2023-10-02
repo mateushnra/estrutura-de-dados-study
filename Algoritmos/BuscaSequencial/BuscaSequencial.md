@@ -1,0 +1,1 @@
+A busca pode ser realizada em vetores ordenados ou não ordenados. Não pode haver números repetidos. O laço de busca é percorrido o número de vezes do tamanho do vetor ou até encontrar o dado.

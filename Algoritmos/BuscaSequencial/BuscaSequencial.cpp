@@ -19,28 +19,28 @@ void outputVet (int vet[6]){
 }
 
 main () {
-	int vet[6], menor, aux, i, j, posi;
+	int vet[6], num, achou = 0, i = 0, posi;
 	
 	setlocale (LC_ALL, "Portuguese");
 	
 	inputVet(vet);
 	
-	for (i = 0; i < 5; i++){
-		menor = vet[i + 1];
-		posi = i + 1;
-		
-		for (j = i + 1; j < 6; j++){
-			if (vet[j] < menor){
-				menor = vet[j];
-				posi = j;
-			}
+	cout << "Informe o número a ser encontrado: ";
+	cin >> num;
+	
+	while(i < 6 && achou == 0){
+		if(vet[i] == num){
+			achou = 1;
+			posi = i;
+		}else{
+			i++;
 		}
-		
-		if (menor < vet [i]){
-			aux = vet[posi];
-			vet[posi] = vet[i];
-			vet[i] = aux;
-		}
+	}
+	
+	if(achou == 0){
+		cout << endl << "O número não foi encontrado!" << endl;
+	}else{
+		cout << endl << "O número " << num << " foi encontrado na posição " << posi << " do vetor!" << endl;
 	}
 	
 	outputVet(vet);
